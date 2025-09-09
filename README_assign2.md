@@ -39,7 +39,7 @@
 ### Step 3: Sequence of Operations
 
 ### Contructor Phase
--The referee(deployer) adds the addresses of **Player A** and **Player B**, which are used for the unique identification.
+- The **referee(deployer)** adds the addresses of **Player A** and **Player B**, which are used for the unique identification.
 
 ### Commit Phase
 - **Player A** calculates `commitHashA = keccak256(abi.encodePacked(choiceA, nonceA))` and calls `commit(commitHashA)`.
