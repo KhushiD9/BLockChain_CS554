@@ -37,7 +37,8 @@
 | `decideWinner()` | Referee           | Referee checks both players have revealed and decides the winner.           |
 
 ### Step 3: Sequence of Operations
-###Contructor Phase
+
+### Contructor Phase
 -The referee(deployer) adds the addresses of **Player A** and **Player B**, which are used for the unique identification.
 
 ### Commit Phase
