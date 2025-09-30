@@ -18,6 +18,7 @@ The DApp includes:
 ├── app.css         # Styling
 ├── app.js          # Web3 logic + ABI + Contract Address
 └── contract.sol    # Smart contract
+```
 ---
 
 ##  Functions & Execution Rights
@@ -79,6 +80,7 @@ The DApp includes:
 
 ### Step 2: Add the contract address
 - The contract address should be added to the **app.js** file in the **CONTRACT_ADDRESS**.
+
 
 
 ### Step 3: Allow bidders to use the application
