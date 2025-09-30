@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IIT Bhilai — Tendering DApp</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <h2>IIT Bhilai — Tendering DApp</h2>
+
+  <h3>Wallet & Contract</h3>
+  <button id="connectBtn">Connect MetaMask</button>
+  <div id="account">Not connected</div>
+  <div id="contractInfo"></div>
+
+  <h3>Commit Bid</h3>
+  <p>Bid amount:</p>
+  <input id="commitAmount" type="text" placeholder="Enter bid amount in Wei">
+  <p>Salt:</p>
+  <input id="commitSalt" type="text" placeholder="Enter a random salt value">
+  <button id="commitBtn">Commit Bid</button>
+  <button id="showCommitHashBtn">Show Commitment Hash</button>
+  <pre id="commitHashOut"></pre>
+
+  <h3>Reveal Bid</h3>
+  <p>Reveal amount:</p>
+  <input id="revealAmount" type="text" placeholder="Enter the same bid amount">
+  <p>Reveal salt:</p>
+  <input id="revealSalt" type="text" placeholder="Enter the same salt value">
+  <button id="revealBtn">Reveal Bid</button>
+  <pre id="revealTxOut"></pre>
+
+  <h3>Owner Controls</h3>
+  <button id="endCommitBtn">End Commit Phase</button>
+  <button id="finalizeBtn">Finalize Tender</button>
+  <pre id="ownerTxOut"></pre>
+
+  <h3>Tender Winner</h3>
+  <button id="getWinnerBtn">Get Winner</button>
+  <button id="getWinningBidBtn">Get Winning Bid</button>
+  <pre id="stateOut"></pre>
+
+  <!-- JS file -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.9.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
